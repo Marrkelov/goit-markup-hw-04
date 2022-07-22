@@ -118,9 +118,27 @@ img {
 .contact-item:not(:last-child) {
   margin-right: 50px;
 }
+.contact .link {
+  display: inline-flex;
+  align-items: center;
+}
 .contact .link:hover,
 .contact .link:focus {
   color: var(--accent-color);
+}
+.mail-link.link::before {
+  content: "";
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+  background-image: url(../images/icon-header/mail-icon.svg);
+}
+.tel-link.link::before {
+  content: "";
+  width: 10px;
+  height: 16px;
+  margin-right: 10px;
+  background-image: url(../images/icon-header/tel-icon.svg);
 }
 .tel-link,
 .mail-link {
