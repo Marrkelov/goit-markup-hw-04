@@ -6,6 +6,7 @@
   --primari-logo-color: #000000;
   --primari-social-color: #afb1b8;
   --secondary-social-color: #ffffff;
+  --scry-sc-darck-tm-bg: rgba(255, 255, 255, 0.1);
   --secondary-bg-color: #2f303a;
   --commands-bg-color: #f5f4fa;
   --bg-botton: #f5f4fa;
@@ -18,7 +19,6 @@
   --header-bottom-border-color: #ececec;
 }
 body {
-  /* max-width: 1600px; */
   margin: 0 auto;
   font-family: var(--primary-font);
   font-weight: 400;
@@ -291,6 +291,7 @@ img {
   line-height: 1.19;
 }
 .social-list {
+  display: flex;
   justify-content: center;
   align-items: center;
 }
@@ -303,6 +304,8 @@ img {
   width: 44px;
   height: 44px;
   border-radius: 50%;
+}
+.social-com-link {
   background-color: transparent;
 }
 .social-link:hover,
@@ -344,7 +347,6 @@ img {
 }
 .clients-item:hover,
 .clients-item:focus {
-  fill: var(--accent-color);
   border: 1px solid var(--accent-color);
 }
 .clients-item:not(:last-child) {
@@ -360,15 +362,18 @@ img {
 .clients-svg {
   fill: var(--primari-social-color);
 }
-.clients-svg:hover,
-.clients-svg:focus {
-  fill: inherit;
+.clients-item:hover .clients-svg,
+.clients-item:focus .clients-svg {
+  fill: var(--accent-color);
 }
 /* ======================== /CLIENTS ======================= */
 /* ======================== BASEMENT ======================= */
 .basement {
   padding: 60px 0;
   background-color: var(--secondary-bg-color);
+}
+.container-basement {
+  display: flex;
 }
 .basement .dark-theme {
   color: var(--white-color);
@@ -398,6 +403,26 @@ img {
   font-size: 14px;
   line-height: 1.71;
   color: var(--footer-color-contact);
+}
+.container-social {
+  margin-left: 70px;
+}
+.social-title {
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--white-color);
+}
+.social-ft-item:not(:last-child) {
+  margin-right: 10px;
+}
+.social-ft-link {
+  background-color: var(--scry-sc-darck-tm-bg);
+}
+.social-ft-svg {
+  fill: var(--white-color);
 }
 /* ======================= /BASEMENT ======================= */
 /* ================= / M A I N   P A G E =================== */
