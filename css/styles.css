@@ -305,12 +305,13 @@ img {
   height: 44px;
   border-radius: 50%;
 }
-.social-com-link {
-  background-color: transparent;
+.social-link {
+  color: var(--primari-social-color);
 }
 .social-link:hover,
 .social-link:focus {
   background-color: var(--accent-color);
+  color: var(--white-color);
 }
 .social-name {
   position: absolute;
@@ -323,11 +324,7 @@ img {
   margin: -1px;
 }
 .social-svg {
-  fill: var(--primari-social-color);
-}
-.social-svg:hover,
-.social-svg:focus {
-  fill: var(--secondary-social-color);
+  fill: currentColor;
 }
 /* ======================== /COMANDS ======================= */
 /* ========================  CLIENTS ======================= */
